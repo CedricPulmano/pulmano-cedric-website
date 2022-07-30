@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 import { MenuItems } from "./MenuItems.js";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   state = {
@@ -15,7 +16,9 @@ class Navbar extends Component {
     return (
       <nav className="navbar-items">
         <h1 className="navbar-logo">
-          Cedric Pulmano <i class="fa-solid fa-dragon"></i>
+          <Link className="icon-links" to="/">
+            Cedric Pulmano <i class="fa-solid fa-dragon"></i>
+          </Link>
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
@@ -26,9 +29,9 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a className="nav-links" href={item.link}>
+                <Link className="nav-links" to={item.link}>
                   {item.title}
-                </a>
+                </Link>
               </li>
             );
           })}
