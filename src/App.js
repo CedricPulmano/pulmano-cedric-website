@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home.js";
 import About from "./components/pages/About.js";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
