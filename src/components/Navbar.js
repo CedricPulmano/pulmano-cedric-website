@@ -8,7 +8,7 @@ class Navbar extends Component {
     showMenu: false,
   };
 
-  handleClick = () => {
+  handleMenuClick = () => {
     this.setState({ showMenu: !this.state.showMenu });
   };
 
@@ -17,10 +17,10 @@ class Navbar extends Component {
       <nav className="navbar-items">
         <h1 className="navbar-logo">
           <Link className="icon-links" to="/">
-            Cedric Pulmano <i class="fa-solid fa-dragon"></i>
+            Cedric Pulmano <i className="fa-solid fa-dragon"></i>
           </Link>
         </h1>
-        <div className="menu-icon" onClick={this.handleClick}>
+        <div className="menu-icon" onClick={this.handleMenuClick}>
           <i
             className={this.state.showMenu ? "fas fa-times" : "fas fa-bars"}
           ></i>
@@ -29,7 +29,11 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link className="nav-links" to={item.link}>
+                <Link
+                  className="nav-links"
+                  to={item.link}
+                  onClick={this.state.showMenu ? this.handleMenuClick : null}
+                >
                   {item.title}
                 </Link>
               </li>

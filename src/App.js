@@ -6,6 +6,7 @@ import Home from "./components/pages/Home.js";
 import About from "./components/pages/About.js";
 import Experience from "./components/pages/Experience.js";
 import Projects from "./components/pages/Projects.js";
+import NotFound from "./components/pages/NotFound.js";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
