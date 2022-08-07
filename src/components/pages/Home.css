@@ -27,7 +27,15 @@
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+    .home-title {
+        font-size: 35px;
+    }
+
+    .home-item {
+        margin: 0.5rem 0.5rem
+    }
+
     .btns {
         flex-direction: column;
     }

@@ -5,7 +5,9 @@ import { SocialItems } from "./SocialItems";
 function Footer() {
   return (
     <div className="footer">
-      <h1>Made with HTML, CSS, JavaScript, and React</h1>
+      <h1 className="footer-text">
+        Made with HTML, CSS, JavaScript, and React
+      </h1>
       <div className="social-logos">
         {SocialItems.map((item) => {
           return (

@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.footer h1 {
+.footer-text {
     color: #fff;
     font-size: 1.5rem;
 }
@@ -19,12 +19,23 @@
 }
 
 .social-icon {
-    margin: 0.5rem;
     font-size: 2rem;
+    margin: 0.5rem;
     color: #fff;
 }
 
 .social-icon:hover {
     color: #123658;
     transition: all 0.5s ease;
+}
+
+@media (max-width: 500px) {
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
+        margin: 0.3rem;
+    }
 }
