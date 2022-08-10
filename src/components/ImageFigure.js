@@ -1,4 +1,5 @@
 import React from "react";
+import "./ImageFigure.css";
 
 function ImageFigure({
   divClasses,
@@ -9,9 +10,13 @@ function ImageFigure({
   imgalt,
 }) {
   return (
-    <div className={divClasses}>
-      <img className={imgClasses} src={imgsrc} alt={imgalt}></img>
-      <h3 className={headerClasses}>{header}</h3>
+    <div className={divClasses + " imgfig-figure"}>
+      <img
+        className={imgClasses + " imgfig-img"}
+        src={imgsrc}
+        alt={imgalt}
+      ></img>
+      <h3 className={headerClasses + " imgfig-caption"}>{header}</h3>
     </div>
   );
 }

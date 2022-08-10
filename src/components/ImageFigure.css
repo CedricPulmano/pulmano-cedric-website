@@ -1,0 +1,125 @@
+.imgfig-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #000;
+}
+
+.imgfig-img {
+    transition: all 0.5s ease;
+}
+
+.imgfig-caption {
+    font-size: 1.3rem;
+}
+
+.ubc {
+    width: 25vw;
+    height: auto;   
+}
+
+.skill-item {
+    margin: 1rem 2rem;
+}
+
+.skill-logo {
+    height: 130px;
+    width: auto;
+    background: #fff;
+}
+
+@media (min-width: 851px) {
+    .imgfig-caption {
+        color: #fff;
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+        transition: all 0.8s ease;
+    }
+
+    .imgfig-figure::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.1);
+        border-top: 20px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 20px solid rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all 1s ease;
+    }
+    
+    .imgfig-figure:hover::after,
+    .imgfig-figure:hover .imgfig-caption{
+        opacity: 1;
+    }
+    
+    .imgfig-figure:hover .imgfig-img {
+        opacity: 0.5;
+    }
+
+    .imgfig-figure:hover .ubc-text {
+        transform: translate(-8vw, 0vh);
+    }
+
+    .ubc-text {
+        transform: translate(-8vw, 5vh);
+    }
+
+    .imgfig-figure:hover .skill-text {
+        transform: translateY(0vh)
+    }
+
+    .skill-text {
+        transform: translateY(5vh);
+    }
+}
+
+@media (max-width: 1100px) {
+    .skill-logo {
+        height: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    .skill-logo {
+        height: 80px;
+    }
+}
+
+@media (max-width: 850px) {
+    .imgfig-figure {
+        background: transparent;
+    }
+}
+
+@media (max-width: 800px) {
+    .skill-logo {
+        height: 130px;
+    }
+}
+
+@media (max-width: 550px) {
+    .skill-logo {
+        height: 80px;
+    }
+
+    .imgfig-caption {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill-logo {
+        height: 60px;
+    }
+
+    .imgfig-caption {
+        font-size: 0.8rem;
+    }
+}

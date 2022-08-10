@@ -36,16 +36,43 @@
 }
 
 .nav-links {
+    position: relative;
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    transition: all 0.25s ease-out;
 }
 
+.nav-links::after {
+    content: "";
+    border-bottom: 5px solid #123658;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links:hover {
+    color: #123658;
+}
+
+.nav-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Old Hover Animation
 .nav-links:hover {
     background-color: #123658;
     border-radius: 5px;
     transition: all 0.5s ease-out;
 }
+*/
 
 .fa-bars, .fa-times {
     color: #fff;
@@ -88,6 +115,10 @@
     .nav-links:hover {
         background-color: #123658;
         border-radius: 0px;
+    }
+
+    .nav-links:hover::after {
+        opacity: 0;
     }
 
     .navbar-logo {
