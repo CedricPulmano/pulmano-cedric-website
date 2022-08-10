@@ -1,7 +1,7 @@
 export const ButtonItems = [
   {
     link: "/about",
-    text: "About",
+    text: "About Me",
   },
   {
     link: "/experience",
