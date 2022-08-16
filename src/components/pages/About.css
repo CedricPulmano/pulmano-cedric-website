@@ -12,8 +12,10 @@
 }
 
 .info-section {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 1rem;
 }
@@ -31,6 +33,17 @@
     grid-template-columns: repeat(6, auto);
 }
 
+.media-section {
+    align-items: flex-start;
+}
+
+.movie-section, .music-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 800px) {
     .skill-grid {
         display: grid;
@@ -38,10 +51,16 @@
     }
 }
 
+@media (max-width: 700px) {
+    .info-text {
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 550px) {
     .main-title {
         margin: 1rem;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .info-item {
@@ -53,14 +72,14 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .main-title {
         margin: 0.8rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .info-item {
-        margin: 0.1rem 1rem;
+        margin: 0.2rem 0.8rem;
     }
 
     .info-text {

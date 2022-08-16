@@ -12,10 +12,11 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .fa-dragon {
-    margin-left: 0.5rem;
+    margin-left: 0.45rem;
     font-size: 1.8rem;
 }
 
