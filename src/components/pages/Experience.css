@@ -1,3 +1,7 @@
+:root {
+    --root-font-size: 16px;
+}
+
 .main-page {
     width: 100%;
     display: flex;
@@ -8,9 +12,20 @@
 }
 
 .info-grid {
+    position: relative;
     background: transparent;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 3fr 10fr;
+    margin-bottom: 1rem;
+}
+
+.reverse {
+    grid-template-columns: 10fr 3fr 1fr;
+}
+
+.grid-item {
+    margin: 1rem 2rem;
 }
 
 .job-title-section {
@@ -23,17 +38,83 @@
 }
 
 .company-title {
-    font-size: 1.5rem;
+    font-size: calc(var(--root-font-size) * 1.5);
 }
 
 .position-title {
-    font-size: 1.2rem;
+    font-size: calc(var(--root-font-size) * 1.2);
 }
 
 .duration-title {
-    font-size: 1rem;
+    font-size: var(--root-font-size);
 }
 
-.info-text {
+.grid-text {
     font-size: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+    .grid-item {
+        margin: 1rem 1.5rem;
+    }
+
+    :root {
+        --root-font-size: 14px
+    }
+
+    .grid-text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        --root-font-size: 12px
+    }
+
+    .grid-text {
+        font-size: 1.1rem;
+    }
+
+    .grid-item {
+        margin: 0.25rem 1rem
+    }
+}
+
+@media (max-width: 650px) {
+    :root {
+        --root-font-size: 9px
+    }
+
+    .grid-text {
+        font-size: 0.8rem;
+    }
+
+    .grid-item {
+        margin: 0rem 1rem
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-item {
+        margin: 1rem 0.8rem;
+    }
+
+    .grid-text {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-item {
+        margin: 0.2rem 0.5rem;
+    }
+
+    :root {
+        --root-font-size: 7px;
+    }
+
+    .grid-text {
+        font-size: 0.5rem;
+    }
 }

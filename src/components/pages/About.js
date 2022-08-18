@@ -86,7 +86,12 @@ function About() {
       </div>
       <div className="info-section media-section">
         <div className="movie-section movies">
-          <h1 className="main-title">Movies</h1>
+          <h1
+            className="main-title
+  "
+          >
+            Movies
+          </h1>
           <ImageFigure
             divClasses="info-item"
             imgClasses="media-img good-bad-ugly"
@@ -121,7 +126,12 @@ function About() {
           />
         </div>
         <div className="music-section music">
-          <h1 className="main-title">Music</h1>
+          <h1
+            className="main-title
+  "
+          >
+            Music
+          </h1>
           <ImageCard
             cardClasses="info-item jimi-hendrix-card"
             imgfig={
