@@ -78,10 +78,11 @@ function About() {
       <div className="info-section hobbies">
         <p className="info-item info-text">
           In my free time, I enjoy listening to music and practicing how to play
-          the guitar. I also try to stay active by playing sports, going outside
-          on walks, going on camping trips, and working out at the gym. I
-          currently attend and volunteer at my church to be more involved within
-          my community.
+          the guitar. I also try to stay active by playing sports, going on
+          walks, going on camping trips, and working out at the gym. I like the
+          outdoors, as I play many field sports and have had a few jobs that
+          were outside. I currently attend and volunteer at my church to be more
+          involved within my community.
         </p>
       </div>
       <div className="info-section media-section">
