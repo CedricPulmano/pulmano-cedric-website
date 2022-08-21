@@ -36,8 +36,8 @@ function Experience() {
           partner, and we would be tasked with a tight schedule of sites that we
           had to do for the day. Planning was key, as we had to think of the
           most efficient route, plan how much resources we would need, and bring
-          the correct equipment for the day. I gained a lot of time management
-          and organization skills as a result.
+          the correct equipment for the day. From this job, I gained a lot of
+          time management and organization skills as a result.
         </p>
         <ImageFigure
           divClasses="grid-item"
@@ -77,9 +77,51 @@ function Experience() {
         </p>
       </div>
       <h1 className="main-title">Volunteering</h1>
-      <div className="info-section daycare-leadership"></div>
-      <div className="info-section watcher-auditor"></div>
-      <div className="info-section los"></div>
+      <div className="info-grid reverse watcher-treasurer">
+        <p className="grid-item grid-text">
+          I volunteer as a watcher and treasurer at my church for the services
+          for children, gaining valuable interpersonal and leadership skills. I
+          also am able to handle finances and organize important records and
+          paperwork.
+        </p>
+        <ImageFigure
+          divClasses="grid-item"
+          imgClasses="company-img church-of-christ"
+          imgsrc="./images/inc.png"
+          imgalt="Church of Christ"
+          headerClasses="company-text church-of-christ-text"
+          header="Church of Christ"
+        />
+        <div className="grid-item job-title-section">
+          <h2 className="company-title">Church of Christ</h2>
+          <h3 className="position-title">
+            Children's Service Watcher / Treasurer
+          </h3>
+          <h4 className="duration-title">July 2018 to Present</h4>
+        </div>
+      </div>
+      <div className="info-grid daycare-leader">
+        <div className="grid-item job-title-section">
+          <h2 className="company-title">Burnaby Neighbourhood House</h2>
+          <h3 className="position-title">
+            Daycare Leader / Food Hub Volunteer
+          </h3>
+          <h4 className="duration-title">October 2019 - Match 2020</h4>
+          <h4 className="duration-title">July 2020 to November 2020</h4>
+        </div>
+        <ImageFigure
+          divClasses="grid-item"
+          imgClasses="company-img bnh"
+          imgsrc="./images/bnh.jpg"
+          imgalt="Burnaby Neighbourhood House"
+          headerClasses="company-text bnh-text"
+          header="Burnaby Neighbourhood House"
+        />
+        <p className="grid-item grid-text">
+          Helping out at a daycare and a food hub helped me develop many
+          positive qualities, such as patience, communication, and compassion.
+        </p>
+      </div>
     </div>
   );
 }

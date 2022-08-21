@@ -19,7 +19,7 @@ function About() {
           imgClasses="media-img ubc"
           imgsrc="./images/ubc-logo.jpg"
           imgalt="UBC"
-          headerClasses="ubc-text"
+          headerClasses="media-text ubc-text"
           header="My School"
         />
       </div>

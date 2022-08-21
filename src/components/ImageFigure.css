@@ -6,6 +6,7 @@
     position: relative;
     text-align: center;
     background: transparent;
+    overflow: hidden;
 }
 
 .imgfig-img {
@@ -32,7 +33,7 @@
 
 .media-img {
     width: 32vw;
-    height: auto;   
+    height: auto;
 }
 
 .skill-item {
@@ -50,6 +51,10 @@
     height: auto;
 }
 
+.bnh-text {
+    font-size: 1rem;
+}
+
 @media (min-width: 851px) {
     .imgfig-caption {
         color: #fff;
@@ -61,7 +66,7 @@
 
     .imgfig-figure::after {
         content: "";
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         border-top: 20px solid rgba(0, 0, 0, 0.7);
         border-bottom: 20px solid rgba(0, 0, 0, 0.7);
         z-index: 1;
@@ -71,20 +76,17 @@
         bottom: 0;
         left: 0;
         right: 0;
-        transition: all 0.7s ease;
+        transform: scaleY(1.5);
+        transition: all 0.5s ease;
     }
     
-    .imgfig-figure:hover::after,
-    .imgfig-figure:hover .imgfig-caption{
+    .imgfig-figure:hover::after {
+        transform: scale(1);
         opacity: 1;
     }
 
-    .ubc-text {
-        transform: translate(-10vw, 5vh);
-    }
-
-    .imgfig-figure:hover .ubc-text {
-        transform: translate(-10vw, 0vh);
+    .imgfig-figure:hover .imgfig-caption {
+        opacity: 1;
     }
 
     .imgfig-figure:hover .skill-text, .imgfig-figure:hover .media-text {
@@ -104,6 +106,10 @@
     .imgfig-caption {
         font-size: 1.1rem;
     }
+
+    .bnh-text {
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 900px) {
@@ -116,11 +122,15 @@
     .imgfig-figure {
         background: transparent;
     }
+
+    .skill-logo {
+        height: 70px;
+    }
 }
 
 @media (max-width: 800px) {
     .skill-logo {
-        height: 130px;
+        height: 120px;
     }
 
     .company-text {
@@ -129,10 +139,6 @@
 }
 
 @media (max-width: 550px) {
-    .skill-logo {
-        height: 80px;
-    }
-
     .imgfig-caption {
         font-size: 1rem;
     }
@@ -144,7 +150,7 @@
 
 @media (max-width: 400px) {
     .skill-logo {
-        height: 60px;
+        height: 90px;
     }
 
     .imgfig-caption {

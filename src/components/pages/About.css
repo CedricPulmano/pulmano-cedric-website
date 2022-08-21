@@ -46,7 +46,6 @@
 
 @media (max-width: 800px) {
     .skill-grid {
-        display: grid;
         grid-template-columns: repeat(3, auto);
     }
 }
@@ -69,6 +68,10 @@
 
     .info-text {
         font-size: 1rem;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, auto);
     }
 }
 
