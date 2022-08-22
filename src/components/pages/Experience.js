@@ -1,6 +1,7 @@
 import React from "react";
-import ImageFigure from "../ImageFigure.js";
 import "./Experience.css";
+import "./Pages.css";
+import ImageFigure from "../ImageFigure.js";
 
 function Experience() {
   return (

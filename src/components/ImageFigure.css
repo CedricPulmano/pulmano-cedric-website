@@ -55,6 +55,16 @@
     font-size: 1rem;
 }
 
+.lp-gui-img {
+    width: 20vw;
+    height: auto;
+}
+
+.lp-console-img {
+    width: 35vw;
+    height: auto;
+}
+
 @media (min-width: 851px) {
     .imgfig-caption {
         color: #fff;
@@ -67,8 +77,8 @@
     .imgfig-figure::after {
         content: "";
         background-color: rgba(0, 0, 0, 0.7);
-        border-top: 20px solid rgba(0, 0, 0, 0.7);
-        border-bottom: 20px solid rgba(0, 0, 0, 0.7);
+        border-top: 20px solid rgba(0, 0, 0, 0.8);
+        border-bottom: 20px solid rgba(0, 0, 0, 0.8);
         z-index: 1;
         opacity: 0;
         position: absolute;

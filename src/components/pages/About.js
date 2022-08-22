@@ -1,13 +1,14 @@
 import React from "react";
+import "./About.css";
+import "./Pages.css";
 import ImageFigure from "../ImageFigure";
 import ImageCard from "../ImageCard";
-import "./About.css";
 
 function About() {
   return (
     <div className="main-page">
       <h1 className="main-title">About Me</h1>
-      <div className="info-section intro">
+      <div className="intro">
         <p className="info-item info-text">
           My name is Cedric Pulmano, a second year computer science student at
           the University of British Columbia. I started at UBC in 2021, and plan
@@ -24,7 +25,7 @@ function About() {
         />
       </div>
       <h1 className="main-title">Skills</h1>
-      <div className="info-section skill-grid">
+      <div className="skill-grid">
         <ImageFigure
           divClasses="skill-item"
           imgClasses="skill-logo html"
@@ -87,12 +88,7 @@ function About() {
       </div>
       <div className="info-section media-section">
         <div className="movie-section movies">
-          <h1
-            className="main-title
-  "
-          >
-            Movies
-          </h1>
+          <h1 className="main-title">Movies</h1>
           <ImageFigure
             divClasses="info-item"
             imgClasses="media-img good-bad-ugly"
