@@ -1,0 +1,14 @@
+.project-link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+
+.project-title {
+    color: var(--dark-blue);
+}
+
+.project-link:hover,
+.project-link:hover .project-title {
+    color: var(--light-blue);
+}

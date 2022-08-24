@@ -80,10 +80,11 @@ function About() {
         <p className="info-item info-text">
           In my free time, I enjoy listening to music and practicing how to play
           the guitar. I also try to stay active by playing sports, going on
-          walks, going on camping trips, and working out at the gym. I like the
-          outdoors, as I play many field sports and have had a few jobs that
-          were outside. I currently attend and volunteer at my church to be more
-          involved within my community.
+          walks, going on camping trips, and working out at the gym. Growing up
+          in the Lower Mainland helped me grow to love the outdoors, as I often
+          play sports with friends, and have enjoyed working jobs that were
+          mostly outside. I currently attend and volunteer at my church, as it
+          helps me stay involved within my community and make friends.
         </p>
       </div>
       <div className="info-section media-section">

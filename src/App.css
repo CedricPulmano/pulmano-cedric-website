@@ -1,3 +1,8 @@
+:root {
+  --dark-blue: #123658;
+  --light-blue: #3aacf5;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pages.css";
+import "./Projects.css";
 import ImageFigure from "../ImageFigure";
 
 function Projects() {
@@ -7,16 +8,16 @@ function Projects() {
     <div className="main-page">
       <h1 className="main-title">Projects</h1>
       <a
-        className="info-item"
+        className="project-link"
         href="https://github.com/CedricPulmano/Lesson-Plan-Organizer"
         target="_blank"
       >
-        <h2 className="project-title">Lesson Plan Organizer</h2>
+        <h2 className="info-text project-title">Lesson Plan Organizer</h2>
       </a>
       <p className="info-item info-text">
         The purpose of this program is to organize and keep track of the
         progress of students that are under a lesson plan. I created this
-        program to enhance my knowledge in Java and in general project building
+        program to enhance my knowledge in Java and general project building
         skills. Some functionalities of the application include: creating
         lessons, adding students, assigning teachers to teach lessons, adding
         requirements to teach certain lessons, and saving and loading data.

@@ -6,11 +6,17 @@
     padding: 10px 30px;
     margin: 10px 20px;
     font-size: 25px;
+    text-decoration: none;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #123658;
-    border: 1px solid #111;
+    background-color: rgba(12, 36, 58, 0.7);
     transition: all 0.3s ease-out;
+}
+
+@media (max-width: 750px) {
+    .btn {
+        font-size: 20px;
+    }
 }

@@ -11,4 +11,8 @@ export const ButtonItems = [
     link: "/projects",
     text: "Projects",
   },
+  {
+    link: "/contact",
+    text: "Contact",
+  },
 ];

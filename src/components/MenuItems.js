@@ -15,4 +15,8 @@ export const MenuItems = [
     title: "Projects",
     link: "/projects",
   },
+  {
+    title: "Contact",
+    link: "/contact",
+  },
 ];
