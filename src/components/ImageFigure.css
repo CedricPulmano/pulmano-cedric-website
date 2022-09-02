@@ -71,7 +71,7 @@
         position: absolute;
         z-index: 2;
         opacity: 0;
-        transition: all 0.8s ease;
+        transition: all 0.5s ease;
     }
 
     .imgfig-figure::after {
@@ -86,7 +86,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        transform: scaleY(1.5);
+        transform: scaleY(1.25);
         transition: all 0.5s ease;
     }
     
@@ -97,14 +97,11 @@
 
     .imgfig-figure:hover .imgfig-caption {
         opacity: 1;
-    }
-
-    .imgfig-figure:hover .skill-text, .imgfig-figure:hover .media-text {
         transform: translateY(0vh)
     }
 
-    .skill-text, .media-text {
-        transform: translateY(5vh);
+    .imgfig-caption {
+        transform: translateY(3vh);
     }
 }
 
