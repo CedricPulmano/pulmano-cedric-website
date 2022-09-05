@@ -11,6 +11,7 @@ function Projects() {
         className="project-link"
         href="https://github.com/CedricPulmano/Lesson-Plan-Organizer"
         target="_blank"
+        rel="noreferrer"
       >
         <h2 className="info-text project-title">Lesson Plan Organizer</h2>
       </a>
