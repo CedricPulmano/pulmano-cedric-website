@@ -11,7 +11,12 @@ function Footer() {
       <div className="social-logos">
         {SocialItems.map((item) => {
           return (
-            <a className="social-icon" href={item.link} target="_blank">
+            <a
+              className="social-icon"
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+            >
               <i class={item.logoClass}></i>
             </a>
           );

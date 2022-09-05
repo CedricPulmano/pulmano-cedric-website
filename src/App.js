@@ -8,7 +8,7 @@ import Experience from "./components/pages/Experience.js";
 import Projects from "./components/pages/Projects.js";
 import Contact from "./components/pages/Contact.js";
 import NotFound from "./components/pages/NotFound.js";
-import TopScroll from "./components/TopScroll";
+import TopScroll from "./components/TopScroll.js";
 
 function App() {
   return (
