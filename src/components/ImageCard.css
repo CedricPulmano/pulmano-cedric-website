@@ -67,6 +67,14 @@
     background-image: url("/public/images/nirvana-smile.png");
 }
 
+.nirvana-card .back::before {    
+    background-image: url("/public/images/nirvana-smile.png");
+}
+
+.ccr-card .back::before {    
+    background-image: url("/public/images/ccr-wood.jpg");
+}
+
 .text {
     width: 100%;
     height: 100%;

@@ -122,6 +122,14 @@ function About() {
             headerClasses="media-text the-thing-text"
             header="The Thing (1982)"
           />
+          <ImageFigure
+            divClasses="info-item"
+            imgClasses="media-img no-country"
+            imgsrc="./images/no-country.jpg"
+            imgalt="No Country for Old Men"
+            headerClasses="media-text no-country-text"
+            header="No Country for Old Men (2007)"
+          />
         </div>
         <div className="music-section music">
           <h1
@@ -189,6 +197,7 @@ function About() {
                 <h1>Favourite Songs</h1>
                 <p>- Killer Queen</p>
                 <p>- Seven Seas of Rhye</p>
+                <p>- Ogre Battle</p>
                 <p>- It's a Hard Life</p>
                 <p>- Somebody to Love</p>
               </div>
@@ -212,6 +221,27 @@ function About() {
                 <p>- Breed</p>
                 <p>- Come As You Are</p>
                 <p>- Sliver</p>
+              </div>
+            }
+          />
+          <ImageCard
+            cardClasses="info-item ccr-card"
+            imgfig={
+              <ImageFigure
+                imgClasses="media-img ccr"
+                imgsrc="./images/ccr.jpg"
+                imgalt="Creedence Clearwater Revival"
+                headerClasses="media-text ccr-text"
+                header="Creedence Clearwater Revival"
+              />
+            }
+            backtext={
+              <div className="text">
+                <h1>Favourite Songs</h1>
+                <p>- Fortunate Son</p>
+                <p>- Lookin' Out My Back Door</p>
+                <p>- Run Through the Jungle</p>
+                <p>- I Heard It Through the Grapevine</p>
               </div>
             }
           />

@@ -7,6 +7,28 @@ function Experience() {
   return (
     <div className="main-page">
       <h1 className="main-title">Work Experience</h1>
+      <div className="info-grid reverse ubc-ta">
+        <p className="grid-item grid-text">
+          Being a teaching assistant has been challenging, bringing me out of my
+          comfort zone to help me be more confident and communicative. I have
+          experience assisting in lectures, as well as leading labs with other
+          peers. It is rewarding being able to use my leadership skills with my
+          passion for computer science in a positive and impactful manner.
+        </p>
+        <ImageFigure
+          divClasses="grid-item"
+          imgClasses="company-img ubc-ta"
+          imgsrc="./images/ubc-ta.png"
+          imgalt="UBC Computer Science"
+          headerClasses="company-text ubc-ta-text"
+          header="UBC Computer Science"
+        />
+        <div className="grid-item job-title-section">
+          <h2 className="company-title">UBC - Faculty of Computer Science</h2>
+          <h3 className="position-title">CPSC 210 Teaching Assistant</h3>
+          <h4 className="duration-title">September 2022 to Present</h4>
+        </div>
+      </div>
       <div className="info-grid chipotle">
         <div className="grid-item job-title-section">
           <h2 className="company-title">Chipotle Mexican Grill</h2>
@@ -107,7 +129,7 @@ function Experience() {
           <h3 className="position-title">
             Daycare Leader / Food Hub Volunteer
           </h3>
-          <h4 className="duration-title">October 2019 - Match 2020</h4>
+          <h4 className="duration-title">October 2019 to Match 2020</h4>
           <h4 className="duration-title">July 2020 to November 2020</h4>
         </div>
         <ImageFigure
